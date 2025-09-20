@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InvoSmart - View Invoice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📄 Invoice Details - InvoSmart</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="invoice.html">Create Invoice</a>
+      <a href="customers.html">Customers</a>
+      <a href="analytics.html">Analytics</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="invoices" id="invoiceDetails">
+      <p>Loading invoice...</p>
+    </section>
+    <div style="text-align: center; margin: 20px;">
+      <button onclick="window.print()" class="btn">🖨 Print / Save as PDF</button>
+    </div>
+  </main>
+
+  <script src="view.js"></script>
+</body>
+</html>

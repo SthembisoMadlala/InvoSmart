@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InvoSmart - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>📊 InvoSmart Dashboard</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="invoice.html">Create Invoice</a>
+      <a href="customers.html">Customers</a>
+      <a href="analytics.html">Analytics</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="cards">
+      <div class="card">
+        <h2>💰 Money In</h2>
+        <p id="moneyIn">R0</p>
+      </div>
+      <div class="card">
+        <h2>📉 Money Owed</h2>
+        <p id="moneyOwed">R0</p>
+      </div>
+    </div>
+
+    <section class="invoices">
+      <h2>Invoices</h2>
+      <div class="search-filter">
+        <input type="text" id="searchInput" placeholder="Search by customer or invoice number">
+        <select id="filterStatus">
+          <option value="all">All</option>
+          <option value="paid">Paid</option>
+          <option value="unpaid">Unpaid</option>
+          <option value="overdue">Overdue</option>
+        </select>
+        <button onclick="applySearchFilter()">Filter</button>
+        <button onclick="clearSearchFilter()">Clear</button>
+      </div>
+      <ul id="invoiceList"></ul>
+      <button class="btn" onclick="exportInvoices()">⬇ Export CSV</button>
+      <button class="btn btn-danger" onclick="resetInvoiceNumbers()">🔄 Reset Invoice Numbers</button>
+      <button class="btn btn-danger" onclick="resetAllData()">🗑 Reset All Data</button>
+    </section>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InvoSmart - Analytics</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>📊 Analytics - InvoSmart</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="invoice.html">Create Invoice</a>
+      <a href="customers.html">Customers</a>
+      <a href="analytics.html">Analytics</a>
+    </nav>
+  </header>
+
+  <main id="analyticsContent">
+    <section class="invoices">
+      <h2>Overdue Summary</h2>
+      <div id="overdueList">Loading...</div>
+    </section>
+
+    <div class="chart-grid">
+      <section class="invoices analytics-chart">
+        <h2>Sales by Month</h2>
+        <canvas id="salesByMonthChart"></canvas>
+      </section>
+
+      <section class="invoices analytics-chart">
+        <h2>Paid vs Unpaid</h2>
+        <canvas id="paidVsUnpaidChart"></canvas>
+      </section>
+
+      <section class="invoices analytics-chart">
+        <h2>Top Customers by Sales</h2>
+        <canvas id="topCustomersChart"></canvas>
+      </section>
+    </div>
+
+    <div class="download-section">
+      <button class="btn" onclick="downloadAnalyticsPDF()">📥 Download Analytics as PDF</button>
+    </div>
+  </main>
+
+  <script src="analytics.js"></script>
+</body>
+</html>

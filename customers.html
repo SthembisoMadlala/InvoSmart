@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Customers - LegendHub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>👥 Customers</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="invoice.html">Create Invoice</a>
+      <a href="customers.html">Customers</a>
+      <a href="analytics.html">Analytics</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-container">
+      <h2>Add Customer</h2>
+      <form id="customerForm">
+        <label>Full Name:</label>
+        <input type="text" id="custName" required />
+
+        <label>Phone:</label>
+        <input type="text" id="custPhone" />
+
+        <label>Email:</label>
+        <input type="email" id="custEmail" />
+
+        <label>Business Name:</label>
+        <input type="text" id="custBusiness" />
+
+        <button type="submit" class="btn btn-green">Save Customer</button>
+      </form>
+    </section>
+
+    <section class="invoices">
+      <h2>Customer List</h2>
+      <button onclick="exportCustomers()" class="btn btn-blue">⬇️ Export Customers (CSV)</button>
+      <ul id="customerList"></ul>
+    </section>
+  </main>
+
+  <script src="customers.js"></script>
+</body>
+</html>

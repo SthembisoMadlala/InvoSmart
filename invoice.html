@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InvoSmart - Create Invoice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🧾 Create Invoice - InvoSmart</h1>
+    <nav>
+      <a href="index.html">Dashboard</a>
+      <a href="invoice.html">Create Invoice</a>
+      <a href="customers.html">Customers</a>
+      <a href="analytics.html">Analytics</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <form id="invoiceForm">
+        <label for="customer">Customer Name:</label>
+        <input type="text" id="customer" required>
+
+        <label for="amount">Total Amount (R):</label>
+        <input type="number" id="amount" required>
+
+        <label for="deposit">Deposit (R):</label>
+        <input type="number" id="deposit">
+
+        <label for="date">Invoice Date:</label>
+        <input type="date" id="date" required>
+
+        <button type="submit">Save Invoice</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="create.js"></script>
+</body>
+</html>
