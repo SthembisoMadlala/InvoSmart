@@ -1,35 +1,45 @@
 # InvoSmart
 
+*Smart, simple invoicing & payment tracking for small businesses.*  
+
 InvoSmart is a lightweight, offline-first invoicing & payment tracking app for small businesses.  
 It helps businesses create and manage invoices, payments, customers, and analytics through a clean, simple dashboard.  
 
-🌐 👉 [Live Demo](https://sthembisomadlala.github.io/InvoSmart/)  
+🌐 👉 **[Live Demo](https://sthembisomadlala.github.io/InvoSmart/)**  
+
+---
+
+## 📸 Preview  
+
+| Dashboard | Invoice | Analytics |
+|-----------|---------|-----------|
+| ![Dashboard](screenshots/dashboard.png) | ![Invoice](screenshots/invoice.png) | ![Analytics](screenshots/analytics.png) |
 
 ---
 
 ## ✨ Features  
 
 ### 🧾 Invoices  
-- Create professional invoices  
-- Track total, paid, and balance amounts  
-- Export invoices as PDF  
+- ✅ Create professional invoices  
+- ✅ Track total, paid, and balance amounts  
+- ✅ Export invoices as PDF  
 
 ### 👥 Customers  
-- Manage customer records  
-- View all customer invoices in one place  
+- ✅ Manage customer records  
+- ✅ View all customer invoices in one place  
 
 ### 💰 Payments  
-- Add payments with dates  
-- Optional: set next payment due date  
+- ✅ Add payments with dates  
+- ✅ (Optional) Set next payment due date  
 
 ### 📊 Analytics  
-- Sales by month chart  
-- Paid vs Unpaid breakdown  
-- Overdue invoice summary  
+- ✅ Sales by month chart  
+- ✅ Paid vs Unpaid breakdown  
+- ✅ Overdue invoice summary  
 
 ### 📤 Exports  
-- Save/Print invoices as **PDF**  
-- Export data as **CSV**  
+- ✅ Save/Print invoices as PDF  
+- ✅ Export data as CSV  
 
 ---
 
@@ -41,4 +51,4 @@ It helps businesses create and manage invoices, payments, customers, and analyti
 ---
 
 ## 📜 License  
-This project is licensed under the **MIT License**.  
+This project is licensed under the **MIT License**.
